@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training - FutureMed</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        function checkAnswer() {
+            const input = document.getElementById('answer').value.trim();
+            const feedback = document.getElementById('feedback');
+            if (input === '4') {
+                feedback.textContent = 'Correct!';
+            } else {
+                feedback.textContent = 'Fout, probeer opnieuw.';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Training</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="training.html">Training</a>
+            <a href="exam.html">Exammodus</a>
+            <a href="progress.html">Voortgang</a>
+            <a href="signup.html">Aanmelden</a>
+        </nav>
+    </header>
+    <main>
+        <p>Beantwoord de vraag en krijg meteen feedback.</p>
+        <p>Wat is 2 + 2?</p>
+        <input id="answer" type="text">
+        <button onclick="checkAnswer()">Controleer</button>
+        <p id="feedback"></p>
+    </main>
+    <footer>
+        &copy; 2024 FutureMed
+    </footer>
+</body>
+</html>
