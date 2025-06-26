@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>FutureMed - Exam Modus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/exam.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Exam modus</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="training.html">Training</a>
+        <a href="progress.html">Voortgang</a>
+    </nav>
+    <main>
+        <div>Tijd resterend: <span id="timer">15:00</span></div>
+        <div id="exam-question"></div>
+        <div id="exam-options"></div>
+        <button onclick="volgende()">Volgende</button>
+        <div class="calculator">
+            <h3>Eenvoudige rekenmachine</h3>
+            <input id="calc-a" type="number"> 
+            <select id="calc-op">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input id="calc-b" type="number">
+            <button onclick="calculate()">=</button>
+            <input id="calc-result" type="number" readonly>
+        </div>
+    </main>
+    <footer>
+        <small>FutureMed staat los van het officiële toelatingsexamenplatform.</small>
+    </footer>
+</body>
+</html>
